@@ -1,4 +1,5 @@
 const express = require('express');
+const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -18,6 +19,16 @@ app.set('trust proxy', 1); //If Behind PROXY
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(expressCspHeader({
+  directives: {
+      'default-src': [SELF],
+      'script-src': [SELF, INLINE, 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'],
+      'style-src': [SELF, INLINE],
+      'img-src': [SELF, INLINE],
+      'worker-src': [NONE],
+      'block-all-mixed-content': true
+  }
+}));
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
