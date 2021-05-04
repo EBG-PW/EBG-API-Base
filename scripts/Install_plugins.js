@@ -1,4 +1,5 @@
 const https = require('https');
+const child_process = require('child_process');
 const fs = require("fs");
 const readline = require('readline');
 const path = require('path');
@@ -40,6 +41,8 @@ function installPlugin(PL_ID){
             });
         });
     });
+
+    child_process.execSync(`npm install ${PluginsPath[PL_ID].npm}`,{stdio:[0,1,2]});
 
     let Vorlage = fs.readFileSync(`${rootPath}.env`).toString();
     Vorlage = `${Vorlage}\n${PluginsPath[PL_ID].env}`
