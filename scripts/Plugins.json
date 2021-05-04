@@ -1,0 +1,22 @@
+{
+    "1": { 
+        "Folder": "MSHStore",
+        "env": "MSHConfigPath=/data/MSHStore",
+        "Files": [
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/MinecraftServerHibernationConfigGenerator/MSH-ConfigGenerator.js", "Path": "/src/api/MSH-ConfigGenerator.js"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/MinecraftServerHibernationConfigGenerator/MSHStore/2-3-3.json", "Path": "/data/MSHStore/2-3-3.json"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/MinecraftServerHibernationConfigGenerator/MSHStore/Protocol_version_numbers.json", "Path": "/data/MSHStore/Protocol_version_numbers.json"}
+        ],
+        "Done": "There is no extra setup needed."
+    },
+    "2": {
+        "Folder": "PPSStore",
+        "env": "PSSConfigPath=/data/PPSStore",
+        "Files": [
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSS.js", "Path": "/src/api/PPS.js"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/config.json", "Path": "/data/PPSStore/config.json"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/index.html", "Path": "/data/PPSStore/index.html"}
+        ],
+        "Done": "Please chance you token in /data/PPSStore/config.json following the readme at https://github.com/EBG-PW/EBG-API-Plugins/blob/master/PterodactylServerStarter/README.md"
+    }
+}
