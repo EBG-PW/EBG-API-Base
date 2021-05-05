@@ -11,13 +11,13 @@
         "Done": "There is no extra setup needed."
     },
     "2": {
-        "Folder": "PPSStore",
-        "env": "PSSConfigPath=/data/PPSStore",
+        "Folder": "PSSStore",
+        "env": "PSSConfigPath=/data/PSSStore",
         "npm": "express-rate-limit nodeactyl-beta joi",
         "Files": [
-            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSS.js", "Path": "/src/api/PPS.js"},
-            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/config.json", "Path": "/data/PPSStore/config.json"},
-            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/index.html", "Path": "/data/PPSStore/index.html"}
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSS.js", "Path": "/src/api/PSS.js"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/config.json", "Path": "/data/PSSStore/config.json"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/index.html", "Path": "/data/PSSStore/index.html"}
         ],
         "Done": "Please chance you token in /data/PPSStore/config.json following the readme at https://github.com/EBG-PW/EBG-API-Plugins/blob/master/PterodactylServerStarter/README.md"
     }
