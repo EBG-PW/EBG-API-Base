@@ -20,5 +20,16 @@
             {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/PterodactylServerStarter/PSSStore/index.html", "Path": "/data/PSSStore/index.html"}
         ],
         "Done": "Please chance you token in /data/PPSStore/config.json following the readme at https://github.com/EBG-PW/EBG-API-Plugins/blob/master/PterodactylServerStarter/README.md"
+    },
+    "3": {
+        "Folder": "TwitchMCStore",
+        "env": "PSSConfigPath=/data/TwitchMCStore",
+        "npm": "express-rate-limit express-csp-header joi rcon-client tmi.js",
+        "Files": [
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/TwitchMinecraftSync/TwitchMinecraft.js", "Path": "/src/api/PSS.js"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/TwitchMinecraftSync/PSSStore/config.json", "Path": "/data/TwitchMCStore/config.json"},
+            {"File": "https://raw.githubusercontent.com/EBG-PW/EBG-API-Plugins/master/TwitchMinecraftSync/PSSStore/index.html", "Path": "/data/TwitchMCStore/index.html"}
+        ],
+        "Done": "Please edit /data/TwitchMCStore/config.json"
     }
 }

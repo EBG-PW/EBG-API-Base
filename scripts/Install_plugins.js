@@ -74,7 +74,7 @@ function updatePlugin(PL_ID){
 /* Questions */
 async function Start() {
     dowhat = await askQuestion("Do you want to install or update a Plugin?\n1: Install\n2: Update\n> ");
-    plugin = await askQuestion("Please choose the plugin you want to install\n1: MSH-Config-Generator\n2: PPS (Pterodactyl-ServerStarter)\n> ");
+    plugin = await askQuestion("Please choose the plugin you want to install\n1: MSH-Config-Generator\n2: PPS (Pterodactyl-ServerStarter)\n2: TwitchMinecraft-Sync\n> ");
     if(dowhat === "1"){
         if(!fs.existsSync(`${rootPath}/${PluginsPath[plugin].Files[0].Path}`)) {
             installPlugin(plugin)
